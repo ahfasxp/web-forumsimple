@@ -1,0 +1,647 @@
+.pm{
+	background-color: #FFFFFF;
+}
+.pm table{
+	border: 2px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::-webkit-scrollbar{
+    height:10px;
+    width:10px;
+    background:#FFF;
+}
+::-webkit-scrollbar-thumb{
+    background:#BBB;
+    border:solid 2px #FFF;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#888;
+}
+::-moz-scrollbar{
+    height:10px;
+    width:10px;
+    background:#FFF;
+}
+::-moz-scrollbar-thumb{
+    background:#BBB;
+    border:solid 2px #FFF;
+}
+::-moz-scrollbar-thumb:hover{
+    background:#888;
+}
+/*message*/
+.message-body{
+    display: block;
+    height: 600px;
+    padding: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+	border: 1px solid #DDDFE2;
+    background-color: #FFFFFF;
+}
+.message-left{
+    display: block;
+    height: 100%;
+    width: 40%;
+    float: left;
+    overflow-y: scroll;
+    border-right: 1px solid #ccc;
+}
+.message-right{
+    display: block;
+    height: 100%;
+    width: 59%;
+    float: right;
+}
+.message-left ul{
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+    width: 100%;
+}
+.message-left ul a{
+    text-decoration: none;
+    overflow: hidden;
+}
+.message-left ul a li{
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    color: black;
+    overflow: hidden;
+}
+.message-left ul a li img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    float: left;
+    margin-right: 5px;
+}
+.message-left ul a li:hover{
+    background: #EBEDF5;
+}
+.message-left ul a li:active{
+    background: #000000;
+}
+.message-left ul a li:visited{
+	background-color: #000000;
+}
+.message-right .display-message{
+    display: block;
+    height: 80%;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    overflow-y:scroll;
+}
+.message-right .send-message{
+    height: 20%;
+    background: #FFFFFF;
+    padding: 10px;
+}
+.message-right .send-message .form-group textarea{
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid #DDDFE2;
+	padding: 5px;
+	margin-bottom: 5px;
+}
+#reply{
+	padding: 3px 5px;
+	background-color: #33B796;
+	border: 2px solid #33B796;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.display-message .message{
+    min-height: 60px;
+    padding: 5px;
+}
+.message .img-con{
+    width: 10%;
+    float: left;
+    height: inherit;
+}
+.message .img-con > img{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 50px;
+}
+.message .text-con{
+    width: 90%;
+    clear: both;
+    height: inherit;
+}
+.message hr{
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top:1px solid #ccc;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #ECECEC;
+	font-family: fontawesome, "Open Sans", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 18px;
+}
+
+/*CSS TOP HEADER/LOGO*/
+#logo{
+	height: 90px;
+	padding: 5px 100px;
+	overflow: hidden;
+	background-color: #009688;
+}
+
+#logo h1{
+	float: left;
+}
+
+#logo h1 img{
+	
+	height: 80px;
+}
+
+#adv{
+	width: 860px;
+	height: 85px;
+	float: right;
+}
+
+#twd-menu{
+	background-color: #008080;
+	height: 27px;
+	padding: 10px 100px;
+	border-top: 3px solid #FFFFFF;
+	overflow: hidden;
+	word-wrap:break-word;
+	border-bottom: 2px solid #DDDFE2;
+}
+
+#twd-menu form{
+	float: left;
+}
+
+#twd-menu .kotak{
+	width: 200px;
+}
+
+#twd-menu form a{
+	font-size: 30px;
+	color: #FFFFFF;
+	float: left;
+	margin-right: 5px;
+}
+
+.kotak{
+	height: 15px;
+	padding: 5px;
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;
+}
+
+.cari{
+	padding: 3px 5px;
+	background-color: #009688;
+	border: 5px solid #009688;
+	border-radius: 3px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.buat-post{
+	margin-top: 3px;
+}
+
+
+#twd-menu ul{
+	float: right;
+	list-style: none;
+}
+
+#twd-menu ul li{
+	float: left;
+	padding: 3px 10px;
+}
+
+#twd-menu ul li:last-child{
+	border-right: none;
+	padding-right: 0px;
+}
+
+#twd-menu ul li a{
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#twd-menu i{
+  font-style: normal;
+  font-weight: normal;
+}
+
+.fixed {
+		position: fixed;
+		top: -5px;
+		width: 85vw;
+		left: 0;
+		background: #0B7271;
+		color: #f8f8f8;
+		-webkit-transition: top 400ms ease 0s;
+		-moz-transition: top 400ms ease 0s;
+		-o-transition: top 400ms ease 0s;
+		-ms-transition: top 400ms ease 0s;
+		transition: top 400ms ease 0s;
+	}
+
+a{
+	text-decoration: none;
+}
+
+.img-user{
+	float: left;
+	margin-right: 5px;
+}
+
+/*Penutup CSS TOP HEADER/LOGO*/
+
+#wrapper{
+	width: 980px;
+	margin: 20px auto;
+	display: flex;
+}
+
+#content{
+	width: 650px;
+	margin-right: 10px;
+	min-height: 400px;
+}
+
+#sidebar{
+	width: 320px;
+}
+
+/*CSS POSTINGAN*/
+
+#postingan{
+	background-color: #FFFFFF;
+	padding: 15px;
+	overflow: hidden;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #DDDFE2;
+	text-align:left;
+	word-wrap:break-word;
+}
+
+#img-author{
+	width: 50px;
+	height: 50px;
+	border-radius: 30px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+.author{
+	color: #000000;
+	font-size: 16px;
+}
+
+.keterangan{
+	color: #8E8E8E;
+	font-size: 13px;
+}
+
+.judul{
+	clear: both;
+	margin-bottom: 10px;
+	margin-top: 18px;
+}
+
+.judul a{
+	color: #000000;
+}
+
+.judul a:hover{
+	color: #33B796;
+}
+
+section{
+	font-size: 15px;
+	line-height: 25px;
+}
+
+section h2{
+	font-size: 20px;
+}
+
+section pre{
+	white-space: pre-wrap;       /* css-3 */
+	white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+	white-space: -pre-wrap;      /* Opera 4-6 */
+	white-space: -o-pre-wrap;    /* Opera 7 */
+	word-wrap: break-word; 
+}
+
+section ul,ol{
+	list-style-position: inside;
+}
+
+section ul,ol,p,h1,h2,h3,pre,hr,table{
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+section blockquote{
+	page-break-inside:avoid;
+	padding:10px 20px;
+	border-left:5px solid #CCCCCC;
+	margin-left: 10px;
+}
+
+section img{
+	max-width: 620px;
+	max-height: 360px;
+}
+
+.marker{
+	background-color: yellow;
+	padding: 3px;
+}
+
+#komen{
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+#kategori{
+	float: left;
+	margin-top: 7px;
+	border: 1px dashed #33B796;
+	padding: 3px;
+}
+
+#lihat{
+	float: right;
+	color: #33B796;
+	margin-top: 10px;
+}
+
+#del{
+	float: right;
+	color: #000000;
+}
+
+#del i{
+	font-style: normal;
+}
+
+/*PENUTUP CSS POSTINGAN*/
+/*CSS PAGINASI*/
+
+#paginasi{
+	background-color: #009688;
+	padding: 0px 20px 20px;
+	color: #FFFFFF;
+	margin-top: 40px;
+}
+
+/*PENUTUP CSS PAGINASI*/
+/*CSS BUAT POSTINGAN*/
+
+#buat-post{
+	background-color: #FFFFFF;
+	padding: 20px;
+	border-radius: 5px;
+	border: 1px solid #DDDFE2;
+}
+
+#buat-post h3{
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+#buat-post label{
+	color: #999999;
+	font-size: 14px;
+}
+
+#buat-post input{
+	margin-bottom: 10px;
+}
+
+.judul-post{
+	width: 603px;
+	height: 30px;
+	padding: 0px 5px;
+}
+
+.kategori{
+	width: 100%;
+	height: 33px;
+	margin-bottom: 10px;
+	padding: 0 3px;
+}
+
+.kategori option[value=””][disabled]{
+	display: none;
+	color: #999999;
+}
+
+/*Penutup CSS BUAT POSTINGAN*/
+/*CSS BUAT KOMENTAR*/
+
+#komentar{
+	background-color: #FFFFFF;
+	padding: 10px 20px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	border: 1px solid #DDDFE2;
+	text-align:left;
+	word-wrap:break-word;
+}
+
+#komentar textarea{
+	padding: 10px;
+	width: 590px;
+	margin: 10px 0px;
+	border-radius: 5px;
+	border: 1px solid #DDDFE2;
+	resize: none;
+}
+
+#komentar p{
+	font-size: 14px;
+	clear: both;
+}
+
+#komentar .isi{
+	margin-left: 55px;
+
+}
+
+#img-komen{
+	width: 45px;
+	height: 45px;
+	border-radius: 30px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	float: left;
+}
+
+#komentar .author{
+	font-size: 13px;
+	float: left;
+}
+
+#komentar label{
+	font-size: 14px;
+	color: #8E8E8E;
+	float: left;
+}
+
+#komentar .tgl{
+	font-size: 11px;
+}
+
+
+/*CSS FOOTER8*/
+
+#footer{
+	height: 70px;
+	background-color: #455A64;
+	text-align: center;
+	padding: 20px;
+	margin-top: 100px;
+}
+
+#footer p{
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+#footer i{
+	font-style: normal;
+}
+
+
+
+/*CSS PROFIL*/
+
+#profil{
+	background-color: #FFFFFF;
+	padding: 10px;
+	overflow: hidden;
+	border: 1px solid #DDDFE2;
+	margin-bottom: 10px;
+}
+
+#profil-header{
+	background-color: #33B796;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+}
+
+.img-circle{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 1px solid #FFFFFF;
+}
+
+#profil h2{
+	color: #FFFFFF;
+}
+
+#profil i{
+	font-style: normal;
+	color: #FFFFFF;
+}
+
+#profil p{
+	text-align: center;
+	margin-top: 20px;
+}
+
+#profil span{
+	border: 4px dashed #33B796;
+	margin-top: 10px;
+	padding: 8px;
+}
+
+.catatan{
+	font-size: 14px;
+}
+
+/*PENUTUP CSS PROFIL*/
+/*CSS TOMBOL SCROLL TOP*/
+#tombolScrollTop
+{
+	cursor: pointer;
+	position:fixed;
+	left:75%;
+	bottom:50px;
+	border:3px solid #33B796;
+	background-color:white;
+	color:#33B796;
+	border-radius:100%;
+	height:90px;
+	width:90px;
+	font-size:15px;
+	display:none;
+}
+
+/*CSS ADMIN*/
+
+#admin{
+	background-color: #FFFFFF;
+	padding: 10px;
+}
+
+#admin h3{
+	background-color: #008080;
+	color: #FFFFFF;
+	padding: 5px;
+}
+
+#admin ul{
+	list-style-position: inside;
+}
+
+#admin a{
+	color: #000000;
+}
+
+#admin a:hover{
+	color: #33B796;
+}
